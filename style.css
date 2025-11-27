@@ -103,6 +103,10 @@ section h2::after {
     text-align: center;        /* Centers all text */
     padding: 120px 20px;       /* Large top/bottom spacing */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Purple gradient background */
+    /* To use an image instead, uncomment below and replace 'your-image.jpg' with your image path: */
+    /* background-image: url('your-image.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center; */
     color: white;              /* White text */
 }
 
@@ -132,11 +136,18 @@ section h2::after {
     font-weight: 600;          /* Semi-bold text */
     font-size: 1.1rem;         /* Slightly larger text */
     transition: transform 0.3s ease; /* Smooth movement on hover */
+    margin: 5px;               /* Small gap between buttons */
 }
 
 .btn:hover {
     transform: translateY(-3px); /* Moves button up slightly */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Adds shadow when hovering */
+}
+
+.btn-secondary {
+    background-color: transparent; /* Transparent background */
+    color: white;              /* White text */
+    border: 2px solid white;   /* White border */
 }
 
 /* ============================================== */
