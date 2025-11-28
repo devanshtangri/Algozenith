@@ -3,6 +3,8 @@
     padding: 0;
     font-family: poppins;
     box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    scroll-behavior: smooth;
     /* border: 1px solid white; */
 }
 body {
@@ -31,6 +33,7 @@ nav {
     background-color: black;
     padding: 25px;
     width: 100%;
+    height: 6rem;
 }
 nav h2 {
     margin-right: auto;
@@ -57,7 +60,7 @@ main {
 .cards {
     margin-top: 15px;
     padding: 25px;
-    width: 80%;
+    width: 45rem;
     display: flex;
     text-align: center;
     background-color: #171717;
@@ -95,8 +98,9 @@ main {
     }
 }
 .sectionTitle {
+    scroll-margin-top: 8rem;
     margin-top: 50px;
-    width: 80%;
+    width: 45rem;
     justify-self: flex-start;
     display: flex;
     align-items: center;
@@ -105,11 +109,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .skills {
     display: flex;
-    width: 150px;
-    height: 150px;
+    width: 10rem;
+    height: 10rem;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
@@ -118,24 +123,45 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #2b2a2a;
-    transition: all 0.1s ease-in-out;
+    background-size: 80%;
+    background-position: 50%;
+    background-repeat: no-repeat;
 }
 .skills:hover {
     scale: 1.25;
     border: 2px solid white;
     background-color: #434343;
 }
+#C {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png");
+}
+#HTML5 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png");
+}
+#CSS {
+    background-size: 60%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg");
+}
+#JavaScript {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png");
+}
+#Python {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/2048px-Python-logo-notext.svg.png");
+}
+#projects {
+    flex-wrap: wrap;
+}
 .project {
-    display: flex;
     flex-direction: column;
     text-align: start;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     margin: 10px;
+    width: 50rem;
+    height: 20rem;
     border-radius: 10px;
     border: 2px solid darkslategray;
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    justify-content: space-evenly;
     background-color: #2b2a2a;
     transition: all 0.1s ease-in-out;
     p {
@@ -159,4 +185,38 @@ main {
         scale: 1.1;
         border: 2px solid white;
     }
+}
+#decisionator {
+    background: linear-gradient(to right, black 0%, black 30%, transparent), url(Assets/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#sms {
+    background: linear-gradient(to right, black 0%, black 30%, transparent), url(Assets/image\ copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#Contact {
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contactMethods {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, rgb(4, 4, 194), rgb(72, 72, 255));
+    border-radius: 0.5rem;
+    border: 2px solid blue;
+    color: white;
+    padding: 10px;
+}
+.contactMethods:hover {
+    scale: 1.1;
+    border: 2px solid white;
+}
+.contactMethods img {
+    width: 30px;
+}
+.contactMethods img, p {
+    padding: 5px;
 }
