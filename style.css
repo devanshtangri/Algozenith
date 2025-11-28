@@ -204,15 +204,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background: linear-gradient(to right, rgb(4, 4, 194), rgb(72, 72, 255));
+    background-color: #2b2a2a;
     border-radius: 0.5rem;
-    border: 2px solid blue;
+    border: 2px solid darkslategray;
     color: white;
     padding: 10px;
 }
 .contactMethods:hover {
     scale: 1.1;
     border: 2px solid white;
+    background-color: #333;
 }
 .contactMethods img {
     width: 30px;
