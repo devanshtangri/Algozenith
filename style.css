@@ -207,8 +207,10 @@ main {
     background-color: #2b2a2a;
     border-radius: 0.5rem;
     border: 2px solid darkslategray;
-    color: white;
+    color: rgb(35, 196, 142);
     padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
 }
 .contactMethods:hover {
     scale: 1.1;
