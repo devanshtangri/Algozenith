@@ -1,121 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
-<body>
-
-    <!-- ============================================= -->
-    <!-- WORKSHOP TASKS FOR STUDENTS                   -->
-    <!-- ============================================= -->
-    <!-- TASK 1: Change "Your Name" to your real name -->
-    <!-- TASK 2: Update the tagline below your name    -->
-    <!-- TASK 3: Write about yourself in About section -->
-    <!-- TASK 4: Add your own skills (4-6 skills)      -->
-    <!-- TASK 5: Add your projects (2-3 projects)      -->
-    <!-- TASK 6: Update contact email and GitHub link  -->
-    <!-- ============================================= -->
-
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="nav-content">
-            <!-- TASK 1: Change "My Portfolio" to your name or any title you want -->
-            <h2>My Portfolio</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <!-- TASK 2: Replace "Your Name Here" with your actual name -->
-        <h1>Your Name Here</h1>
-        
-        <!-- TASK 3: Change the tagline to describe yourself (keep it short!) -->
-        <p>Aspiring Web Developer | Learning to Code</p>
-        
-        <a href="#projects" class="btn">View My Work</a>
-        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        
-        <!-- TASK 4: Write 2-3 sentences about yourself -->
-        <!-- Tell us: What are you learning? What do you enjoy? What are your goals? -->
-        <p>
-            I am currently learning web development and excited to build my first portfolio.
-            I love creating websites and learning new technologies.
-        </p>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <!-- TASK 5: Add or change skills below -->
-            <!-- You can add more skills by copying the <span> lines -->
-            <!-- Examples: Python, React, Node.js, Figma, Photoshop, etc. -->
-            <span class="skill">HTML</span>
-            <span class="skill">CSS</span>
-            <span class="skill">JavaScript</span>
-            <span class="skill">Git</span>
-            <!-- Add more skills here by copying the line above -->
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            
-            <!-- TASK 6: Edit your first project -->
-            <!-- Change the title, description, and GitHub link -->
-            <div class="project-card">
-                <h3>Project Title</h3> <!-- Replace with your project name -->
-                <p>A short description about your project goes here.</p> <!-- Describe what it does -->
-                <a href="#">GitHub ↗</a> <!-- Add your GitHub project link -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <div id="circle"></div>
+            <h2>Devansh Tangri</h2>
+            <div id="links">
+                <a href="#AboutMe">About</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Projects">Projects</a>
+                <a href="#Contacts">Contact</a>
             </div>
-
-            <!-- TASK 7: Edit your second project -->
-            <div class="project-card">
-                <h3>Another Project</h3> <!-- Replace with your project name -->
-                <p>Describe what this project does in one line.</p> <!-- Project description -->
-                <a href="#">GitHub ↗</a> <!-- Add your GitHub project link -->
+        </nav>
+        <main>
+            <div class="sectionTitle" id="AboutMe">
+                <div id="circle"></div>
+                <h2>About Me</h2>
             </div>
-
-            <!-- BONUS: Want to add more projects? Copy the entire <div class="project-card">...</div> block -->
-
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        
-        <!-- TASK 8: Replace with your actual email -->
-        <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
-        
-        <!-- TASK 9: Replace with your GitHub username -->
-        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <!-- TASK 10: Replace "Your Name" with your actual name -->
-        <p>© 2025 Your Name | Built in Workshop</p>
-    </footer>
-
-    <script src="index.js"></script>
-</body>
+            <div class="cards" id="aboutMe">
+                <div id="info">
+                    <img id="picture" src="Assets/1749961507312.jpg" alt="profilePic" />
+                    <h1>Devansh Tangri</h1>
+                </div>
+                <div id="details">
+                    <h1>Hello</h1>
+                    <p>
+                        I'm a systems-minded developer who thrives on solving real problems through clean architecture and hands-on iteration. I specialize in building automation
+                        flows, designing efficient backend logic, and creating interfaces that feel intuitive and responsive.
+                    </p>
+                </div>
+            </div>
+            <div class="sectionTitle" id="Skills">
+                <div id="circle"></div>
+                <h2>Skills</h2>
+            </div>
+            <div class="cards" id="skillSet">
+                <img class="skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png" alt="C">
+                <img class="skills" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+                <div class="skills">CSS</div>
+                <div class="skills">JavaScript</div>
+                <div class="skills">Python</div>
+            </div>
+            <div class="sectionTitle" id="Projects">
+                <div id="circle"></div>
+                <h2>Projects</h2>
+            </div>
+            <div class="cards" id="projects">
+                <div class="project">
+                    <h2>The Decisionator</h2>
+                    <p>The Decisionator is a playful static website that helps you make choices when you’re feeling indecisive — or just want to let fate (and a little humor) decide.</p>
+                    <a href="https://decisionator.devansh.cc" target="_blank">Go ↗</a>
+                </div>
+            </div>
+        </main>
+    </body>
 </html>
