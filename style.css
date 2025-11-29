@@ -99,11 +99,14 @@ main {
 }
 .sectionTitle {
     scroll-margin-top: 8rem;
-    margin-top: 50px;
+    margin-top: 3.5rem;
     width: 45rem;
     justify-self: flex-start;
     display: flex;
     align-items: center;
+}
+.sectionTitle h2 {
+    font-size: 2rem;
 }
 #skillSet {
     display: flex;
@@ -200,6 +203,7 @@ main {
 #Contact {
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 .contactMethods {
     display: flex;
@@ -210,7 +214,7 @@ main {
     border: 2px solid darkslategray;
     color: rgb(35, 196, 142);
     padding: 1rem;
-    font-size: 1rem;
+    margin: 1rem;
     text-decoration: none;
     font-weight: 600;
 }
@@ -220,11 +224,48 @@ main {
     background-color: #333;
 }
 .contactMethods img {
-    width: 30px;
+    width: 2rem;
+}
+.contactMethods p {
+    font-size: 1rem;
 }
 .contactMethods img,
 p {
-    padding: 5px;
+    padding: 0.4rem;
+}
+footer {
+    width: 100%;
+    height: 10rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #171717;
+    div {
+        display: flex;
+        padding: 1rem;
+    }
+}
+#githubPortfolioRepo {
+    border-right: 2px solid darkslategrey;
+}
+#githubPortfolioRepo,
+#Cloudflare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid darkslategray;
+    img {
+        height: 2rem;
+    }
+    a {
+        border-radius: 0.5rem;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media (max-width: 850px) {
     * {
@@ -242,5 +283,8 @@ p {
     .cards,
     .sectionTitle {
         width: 90%;
+    }
+    .project a {
+        padding: 0.5rem;
     }
 }
